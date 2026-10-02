@@ -96,9 +96,11 @@ Thanks to this, I got the flag after just two requests.
 <img width="1408" height="773" alt="screenshot_261002_131800" src="https://github.com/user-attachments/assets/bcf31ba7-6c9d-435f-aede-c813cb47a69b" />
 <img width="1171" height="573" alt="screenshot_261002_131817" src="https://github.com/user-attachments/assets/f90548c7-8654-4bd4-92fc-64d052a01588" />
 
----
 
-Author: Ray1N-0x
 
 You can also find another flag in the image-loading task: simply check the "Network" tab in the developer tools and you'll see that only one file—the image—is being loaded; examine the request body, and the flag will be there.
 Based on the results, you will have 27 points, which is enough to receive an invitation to HackerOne's private programs.
+
+---
+
+Author: Ray1N-0x
