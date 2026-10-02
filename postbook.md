@@ -1,9 +1,9 @@
 # Postbook
 
-**Сложность:** Easy  
-**Флаги:** 7/7  
-**Дата:** Октябрь 2026  
-**Платформа:** Hacker101 CTF
+**Difficulty:** Easy
+**Flags:** 7/7
+**Date:** October 2026
+**Platform:** Hacker101 CTF
 
 
 ---
