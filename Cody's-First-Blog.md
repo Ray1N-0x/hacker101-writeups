@@ -7,7 +7,7 @@
 
 ---
 
-#flag1
+# flag1
 
 We arrive and are greeted by this page; we’ll immediately test the comment form for XSS.
 <img width="1344" height="559" alt="Снимок экрана 2026-10-08 132435" src="https://github.com/user-attachments/assets/275f7e89-3d9f-4492-b0d2-004710499811" />
@@ -40,7 +40,7 @@ And give 1 flag
 
 ---
 
-#flag2
+# flag2
 ?page=admin.auth.inc
 `admin.auth.login` looks strange.
 I tried removing the middle part and leaving just `admin.auth`.
@@ -62,7 +62,7 @@ My comments aren't showing up anywhere, but based on previous flags, I assume th
 
 ---
 
-#flag3 continuation from flag 2
+# flag3 continuation from flag 2
 <img width="1153" height="575" alt="Снимок экрана 2026-10-08 143931" src="https://github.com/user-attachments/assets/750bb800-0573-4ae8-8f72-8c4915d3690e" />
 Anyway, after a lot of experimenting, I found an RCE vulnerability. Basically, if you leave a comment containing `php system(...)`, it should execute. The trick is to force the server to call itself—essentially an SSRF-style attack—to reveal the output. You leave a comment like this:
 `<?php system('ls -la'); ?>`
@@ -111,4 +111,4 @@ Thanks everyone; that was the methodology I used to complete this machine.
 
 ---
 
-#Author: Ray1N-0x
+# Author: Ray1N-0x
